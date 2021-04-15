@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+header {
+    height: 6em;
+    background-color: #D2C2B0;
+}
+nav {
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0 1em;
+}
+
+#nav-middle-container {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5em;
+}
+
+#upFour-logo {
+    height: 88%;
+}
+
+.header-button {
+    border: 1px solid #e7e7e7;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px;
+    cursor: pointer;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+      opacity: 75%;
+  }
+
+.middle-link:link, .middle-link:visited, .middle-link:active {
+    text-decoration: none;
+    color: white;
+}
