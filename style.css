@@ -1,14 +1,281 @@
-* {
-    margin: 0;
-    padding: 0;
+body{
+    height: 100vh;
+    margin: 0px;
+    font-family: ubuntu;
 }
-body {
-    font-family: Tahoma, Helvetica, sans-serif;
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#emprestimo{
+    height: 100%;
+    background-color: #D2C2B0;
+    color: #D2C2B0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1%;
+    row-gap: 1%;
+}
+.texto-emprestimo{
+    color: #1F1F24;
+    grid-column: 2/5;
+    text-align: center;
+}
+.valor-1{
+    background-color: #1F1F24;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 2;  
+}
+.valor-2{
+    background-color: #1F1F24;
+    grid-row: 2;
+    grid-column: 3; 
+}
+.valor-3{
+    background-color: #1F1F24;
+    grid-row: 3;
+    grid-column: 2; 
+}
+.valor-4{
+    background-color: #1F1F24;
+    grid-row: 3;
+    grid-column: 3; 
+}
+.valor-5{
+    background-color: #1F1F24;
+    grid-row: 2;
+    grid-column: 4; 
+}
+.valor-6{
+    background-color: #1F1F24;
+    text-transform: uppercase;
+    grid-row: 3;
+    grid-column: 4; 
+}
+div[class^="valor"]:hover{
+    background-color: #33333a;
+}
+
+div[class^="valor"] {
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#acesso{
+    grid-row: 4;
+    grid-column: 2/5;
+    color: #1F1F24;
+}
+.login{
+    text-decoration: none;
+}
+#modelo{
+    grid-row: 1/ span 4;
+    grid-column: 6/ span 2;
+}
+.modelo{
+    width: 100%;
+    height: 100%;
+    max-height: 271.25px;
+    max-width: 420px;
+}
+#descricao{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 30% 1fr;
+    column-gap: 1%;
+}
+.descricao-texto{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.card-seguranca{
+    grid-column: 2;
+    grid-row: 2;
+}
+.card-velocidade{
+    grid-column: 3;
+    grid-row: 2;
+}
+.card-flexbilidade{
+    grid-column: 4;
+    grid-row: 2;
+}
+.card-sonho{
+    grid-column: 5;
+    grid-row: 2;
+}
+h4{
+    text-align: center;
+}
+div[class^="card"]{
+    text-align: center;
+}
+#perguntas{
+    margin-top: 3%;
+    background-color: #1F1F24;
+    color: #D2C2B0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.duvidas-texto{
+    background-color: #1F1F24;
+    text-align: center;
+}
+.pergunta:hover{
+    background-color: #33333a;
+}
+.pergunta {
+    border-bottom: 1px solid #1F1F24;
+    padding: 10px 0
+}
+.pergunta input,.pergunta .resposta {
+    display: none 
+}
+.pergunta label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  .pergunta input:checked ~ .resposta {
+    display: block
+}
+@media screen and (max-device-width: 1197px){
+    #modelo{
+        grid-row: 1/ span 4;
+        grid-column: 5/ span 3;
+    }
+    .modelo{
+        width: 100%;
+        height: 100%;
+        max-height: 383.25px;
+    }
+}
+@media screen and (max-device-width: 1000px){
+    #emprestimo{
+        grid-template-columns: repeat(8, 1fr);
+    }
+    #modelo{
+        display: none;
+    }
+    .texto-emprestimo{
+        grid-column: 2/8;
+        text-align: center;
+    }
+    .valor-1{
+        grid-row: 2;
+        grid-column: 2/ span 2;  
+    }
+    .valor-2{
+        grid-row: 2;
+        grid-column: 4/span 2; 
+    }
+    .valor-3{
+        grid-row: 3;
+        grid-column: 2/ span 2;; 
+    }
+    .valor-4{
+        grid-row: 3;
+        grid-column: 4/span 2; 
+    }
+    .valor-5{
+        grid-row: 2;
+        grid-column: 6/span 2; 
+    }
+    .valor-6{
+        grid-row: 3;
+        grid-column: 6/span 2; 
+    }
+    #acesso{
+        grid-column: 2/6;
+        color: #1F1F24;
+    }
+    #perguntas{
+        margin-top: 6%;
+    }
+}
+@media screen and (max-device-width: 688px){
+    #emprestimo{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    #modelo{
+        display: none;
+    }
+    .texto-emprestimo{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    .valor-1{
+        grid-row: 2;
+        grid-column: 2/ span 2;  
+    }
+    .valor-2{
+        grid-row: 2;
+        grid-column: 4/span 2; 
+    }
+    .valor-3{
+        grid-row: 3;
+        grid-column: 2/ span 2;; 
+    }
+    .valor-4{
+        grid-row: 3;
+        grid-column: 4/span 2; 
+    }
+    .valor-5{
+        grid-row: 4;
+        grid-column: 2/span 2; 
+    }
+    .valor-6{
+        grid-row: 4;
+        grid-column: 4/span 2; 
+    }
+    #acesso{
+        grid-row: 5;
+        grid-column: 2/6;
+        color: #1F1F24;
+    }
+    #descricao{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 8% 1fr 1fr 1fr 1fr;
+    }
+    .descricao-texto{
+        grid-column: 1/4;
+    }
+    .card-seguranca{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .card-velocidade{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .card-flexbilidade{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .card-sonho{
+        grid-column: 2;
+        grid-row: 5;
+    }
 }
 
 header {
-    height: 6em;
-    background-color: #D2C2B0;
+    background-color: #1F1F24;
+    font-size: 15px;
+
 }
 nav {
     display: flex;
@@ -54,7 +321,7 @@ a:link, a:visited, a:active {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
     #nav-middle-container {
         display: none;
     }
@@ -68,3 +335,4 @@ a:link, a:visited, a:active {
     }
     
 }
+

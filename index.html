@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>UpFour</title>
 </head>
 
@@ -21,10 +23,72 @@
         </nav>
     </header>
 
-    <div class="main-container">
-        <section>Seçao 1</section>
-        <section>Seção 2</section>
-        <section>Seção 3</section>
+    <div id="main-container">
+        <section id="emprestimo">
+            <h2 class="texto-emprestimo">Empréstimo pessoal, faça uma simulação online</h2>
+            <div class="valor-1">R$ 1.000</div>
+            <div class="valor-2">R$ 2.000</div>
+            <div class="valor-3">R$ 5.000</div>
+            <div class="valor-4">R$ 10.000</div>
+            <div class="valor-5">R$ 20.000</div>
+            <div class="valor-6">outro valor</div>
+            <div id="acesso">Já é um cliente da <strong>UpFour</strong> <a class="login"href="#">Clique aqui e acesse a sua conta</a></div>
+            <div id="modelo"><img class ="modelo"src="./img/main-img-int.jpg" alt=""></div>
+        </section>
+        <section id="descricao">
+            <h2 class="descricao-texto">Motivos para nos contratar? Ah a gente tem: </h2>
+            <div class="card-seguranca">
+                <img class="img-seguranca" src="./img/seguranca.png" alt="segurança">
+                <h4>Seguro</h4>
+                <p>Você não precisa sair de casa, transparência total, você tem total visibiliadade de taxas, tarifas e etc.</p>
+            </div>
+            <div class="card-velocidade">
+                <img class="img-velocidade" src="./img/velocidade.png" alt="segurança">
+                <h4>Rápido</h4>
+                <p>Após a aprovação o dinheiro estará na sua conta em menos de 12h. </p>
+            </div>
+            <div class="card-flexbilidade">
+                <img class="img-flexibilidade" src="./img/emprestimo.png" alt="segurança">
+                <h4>Parcelas</h4>
+                <p>Ser flexível é essencial, então você decide a melhor forma de parcelar o empréstimo.</p>
+            </div>
+            <div class="card-sonho">
+                <img class="img-sonho" src="./img/sonho.png" alt="segurança">
+                <h4>Sonhos</h4>
+                <p>Para alcançar o seu objetivo vamos trabalhar juntos.</p>
+            </div>
+        </section>
+        <section id="perguntas">
+            <h2 class="duvidas-texto">Dúvidas frequentes</h2>
+            <div class='pergunta'>
+                <input type='checkbox' id='resposta-1'>
+                <label for='resposta-1'>Quem pode solicitar o empréstimo?</label>
+                <div class='resposta'>
+                  Todas as pessoas que tem o sonho de abrir o seu próprio negócio.
+                </div>
+              </div>  
+              <div class='pergunta'>
+                <input type='checkbox' id='resposta-2'>
+                <label for='resposta-2'>Como pagar as parcelas?</label>
+                <div class='resposta'>
+                  Você pode escolher a melhor forma, débito automático, dinheiro ou tranferência.
+                </div>
+              </div>
+              <div class='pergunta'>
+                <input type='checkbox' id='resposta-3'>
+                <label for='resposta-3'>Em quanto tempo posso começar a pagar?</label>
+                <div class='resposta'>
+                  Você tem até 180 dias para pagar a primeia parcela. A data de pagamento você define no contrato.
+                </div>
+              </div>
+              <div class='pergunta'>
+                <input type='checkbox' id='resposta-4'>
+                <label for='resposta-4'>Qual a Taxa de juros?</label>
+                <div class='resposta'>
+                  Nossa taxa de juros varia entre 1% A 5%. Essa informação será disponibilizada com exatidão após a solicitação da simulação.
+                </div>
+              </div>
+        </section>
     </div>
 
     <!-- <footer id="footer">
