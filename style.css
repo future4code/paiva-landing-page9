@@ -272,3 +272,67 @@ div[class^="card"]{
     }
 }
 
+header {
+    background-color: #1F1F24;
+    font-size: 15px;
+
+}
+nav {
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0 1em;
+}
+
+#nav-middle-container {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5em;
+}
+
+#upFour-logo {
+    height: 88%;
+}
+
+.header-button {
+    border: 1px solid #e7e7e7;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px;
+    cursor: pointer;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+      opacity: 75%;
+  }
+
+.middle-link:link, .middle-link:visited, .middle-link:active {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 440px) {
+    #nav-middle-container {
+        display: none;
+    }
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #upFour-logo {
+        margin-right: 2em;
+    }
+    
+}
+
