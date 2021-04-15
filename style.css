@@ -52,3 +52,19 @@ a:link, a:visited, a:active {
     text-decoration: none;
     color: white;
 }
+
+
+@media screen and (max-width: 400px) {
+    #nav-middle-container {
+        display: none;
+    }
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #upFour-logo {
+        margin-right: 2em;
+    }
+    
+}
