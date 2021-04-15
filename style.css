@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+footer{
+  
+    color: #1F1F24;
+    background-color: #D2C2B0;
+    height: auto;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding-top:2vh ;
+   
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+.made-by{
+    text-align: center;
+    padding-top: 4vh;
+}
+
+.textfooter{
+    text-align: center;
+
+}
+#logofooter{
+    height: 8em;
+    width: 8em;
+}
+.social{
+    background-size: 5vh;
+    height:5vh;
+    width: 5vw;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: row;
+}
