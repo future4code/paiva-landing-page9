@@ -175,7 +175,7 @@ div[class^="card"] {
     display: block
 }
 /* <<<<<<<<<<<<<<< */
-
+/* <<<<<<< rodape design geral */
 footer {
     color: #1F1F24;
     background-color: #D2C2B0;
@@ -187,24 +187,24 @@ footer {
     justify-content: center;
     text-align: center;
 }
-
+/* <<<<<<< texto e formatação copyright e botao inicio */
 .made-by {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     padding-bottom: 1vh;
 }
-
+/* <<<<<<< texto abaixo da logo*/
 .textfooter {
     text-align: center;
 }
-
+/* <<<<<<< logo do rodape*/
 #logofooter {
     padding: 3px;
     height: 4em;
     width: 4em;
 }
-
+/* <<<<<<< icones das redes sociais*/
 .socialdiv {
     text-align: center;
 }
@@ -214,7 +214,7 @@ footer {
     height: 50px;
     width: 50px;
 }
-
+/* <<<<<<< botao de inicio*/
 .footer-button {
     text-align: center;
 }
