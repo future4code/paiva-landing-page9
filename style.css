@@ -1,21 +1,20 @@
-body{
+body {
     height: 100vh;
     margin: 0px;
     font-family: ubuntu;
 }
 
-img{
+img {
     width: 100px;
     height: 100px;
 }
 
-
-#main-container{
+#main-container {
     display: flex;
     flex-direction: column;
 }
 
-#emprestimo{
+#emprestimo {
     height: 100%;
     background-color: #D2C2B0;
     color: #D2C2B0;
@@ -25,44 +24,53 @@ img{
     column-gap: 1%;
     row-gap: 1%;
 }
-.texto-emprestimo{
+
+.texto-emprestimo {
     color: #1F1F24;
     grid-column: 2/5;
     text-align: center;
 }
-.valor-1{
+
+.valor-1 {
     background-color: #1F1F24;
     align-items: center;
     grid-row: 2;
-    grid-column: 2;  
+    grid-column: 2;
 }
-.valor-2{
+
+.valor-2 {
     background-color: #1F1F24;
     grid-row: 2;
-    grid-column: 3; 
+    grid-column: 3;
 }
-.valor-3{
+
+.valor-3 {
     background-color: #1F1F24;
     grid-row: 3;
-    grid-column: 2; 
+    grid-column: 2;
 }
-.valor-4{
+
+.valor-4 {
     background-color: #1F1F24;
     grid-row: 3;
-    grid-column: 3; 
+    grid-column: 3;
 }
-.valor-5{
+
+.valor-5 {
     background-color: #1F1F24;
     grid-row: 2;
-    grid-column: 4; 
+    grid-column: 4;
 }
-.valor-6{
+
+.valor-6 {
     background-color: #1F1F24;
     text-transform: uppercase;
     grid-row: 3;
-    grid-column: 4; 
+    grid-column: 4;
+    text-align: center;
 }
-div[class^="valor"]:hover{
+
+div[class^="valor"]:hover {
     background-color: #33333a;
 }
 
@@ -72,255 +80,289 @@ div[class^="valor"] {
     justify-content: center;
     display: flex;
 }
-#acesso{
+
+#acesso {
     grid-row: 4;
     grid-column: 2/5;
     color: #1F1F24;
 }
-.login{
+
+.login {
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    text-transform: uppercase;
 }
-#modelo{
+
+.login:hover {
+    opacity: 20%;
+}
+
+#modelo {
     grid-row: 1/ span 4;
     grid-column: 6/ span 2;
 }
-.modelo{
+
+.modelo {
     width: 100%;
     height: 100%;
     max-height: 271.25px;
     max-width: 420px;
 }
-#descricao{
+
+#descricao {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 30% 1fr;
-    column-gap: 1%;
+    column-gap: 3%;
 }
-.descricao-texto{
+
+.descricao-texto {
     grid-column: 1/-1;
     text-align: center;
 }
-.card-seguranca{
+
+.card-seguranca {
     grid-column: 2;
     grid-row: 2;
 }
-.card-velocidade{
+
+.card-velocidade {
     grid-column: 3;
     grid-row: 2;
 }
-.card-flexbilidade{
+
+.card-flexbilidade {
     grid-column: 4;
     grid-row: 2;
 }
-.card-sonho{
+
+.card-sonho {
     grid-column: 5;
     grid-row: 2;
 }
-h4{
+
+h4 {
     text-align: center;
 }
-div[class^="card"]{
+
+div[class^="card"] {
     text-align: center;
 }
-#perguntas{
+
+#perguntas {
     margin-top: 3%;
     background-color: #1F1F24;
     color: #D2C2B0;
     display: flex;
     flex-direction: column;
     text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.duvidas-texto{
+
+.duvidas-texto {
     background-color: #1F1F24;
     text-align: center;
 }
-.pergunta:hover{
+
+.pergunta:hover {
     background-color: #33333a;
 }
+
 .pergunta {
     border-bottom: 1px solid #1F1F24;
     padding: 10px 0
 }
-.pergunta input,.pergunta .resposta {
-    display: none 
+
+.pergunta input, .pergunta .resposta {
+    display: none
 }
+
 .pergunta label {
     display: inline-block;
+    width: 100%;
     font-weight: bold;
     margin-bottom: 5px;
 }
-  .pergunta input:checked ~ .resposta {
+
+.pergunta input:checked~.resposta {
     display: block
 }
-footer{
-  
+
+footer {
     color: #1F1F24;
     background-color: #D2C2B0;
     bottom: 0;
-    padding: 2vh;
-    width: 100%; 
- 
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: center;
     text-align: center;
-    
-    
-}
-.made-by{
-    text-align: center;
-    padding-top:1vh;
 }
 
-.textfooter{
-    text-align: center;
-    size: 6rem;
-
-}
-#logofooter{
-    height: 5em;
-    width: 5em;
-}
-.socialdiv{
-    text-align: center;
-        
-}
-.social{
-    padding: 1vw;
-    display: inline-block;
-    text-align: center;
-    
-}
-.footer-button {    
+.made-by {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-bottom: 1vh;
+}
+
+.textfooter {
+    text-align: center;
+}
+
+#logofooter {
+    padding: 3px;
+    height: 4em;
+    width: 4em;
+}
+
+.socialdiv {
+    text-align: center;
+}
+
+.social1 {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.footer-button {
+    text-align: center;
+}
+
+.footer-button {
     border: 1px solid #e7e7e7;
     background-color: white;
-    padding: 0.5em;
     border-radius: 12px;
     box-shadow: 2px 2px 5px;
     cursor: pointer;
-    margin-left: 92%;
 }
-    
 
-
-@media screen and (max-device-width: 1197px){
-    #modelo{
+@media screen and (max-device-width: 1197px) {
+    #modelo {
         grid-row: 1/ span 4;
         grid-column: 5/ span 3;
     }
-    .modelo{
+    .modelo {
         width: 100%;
         height: 100%;
         max-height: 383.25px;
     }
 }
-@media screen and (max-device-width: 1000px){
-    #emprestimo{
+
+@media screen and (max-device-width: 1000px) {
+    #emprestimo {
         grid-template-columns: repeat(8, 1fr);
     }
-    #modelo{
+    #modelo {
         display: none;
     }
-    .texto-emprestimo{
+    .texto-emprestimo {
         grid-column: 2/8;
         text-align: center;
     }
-    .valor-1{
+    .valor-1 {
         grid-row: 2;
-        grid-column: 2/ span 2;  
+        grid-column: 2/ span 2;
     }
-    .valor-2{
+    .valor-2 {
         grid-row: 2;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    .valor-3{
+    .valor-3 {
         grid-row: 3;
-        grid-column: 2/ span 2;; 
+        grid-column: 2/ span 2;
+        ;
     }
-    .valor-4{
+    .valor-4 {
         grid-row: 3;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    .valor-5{
+    .valor-5 {
         grid-row: 2;
-        grid-column: 6/span 2; 
+        grid-column: 6/span 2;
     }
-    .valor-6{
+    .valor-6 {
         grid-row: 3;
-        grid-column: 6/span 2; 
+        grid-column: 6/span 2;
     }
-    #acesso{
+    #acesso {
         grid-column: 2/6;
         color: #1F1F24;
     }
-    #perguntas{
+    #perguntas {
         margin-top: 6%;
     }
 }
-@media screen and (max-device-width: 688px){
-    #emprestimo{
+
+@media screen and (max-device-width: 688px) {
+    #emprestimo {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
-    #modelo{
+    #modelo {
         display: none;
     }
-    .texto-emprestimo{
+    .texto-emprestimo {
         grid-column: 1/-1;
         text-align: center;
     }
-    .valor-1{
+    .valor-1 {
         grid-row: 2;
-        grid-column: 2/ span 2;  
+        grid-column: 2/ span 2;
     }
-    .valor-2{
+    .valor-2 {
         grid-row: 2;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    .valor-3{
+    .valor-3 {
         grid-row: 3;
-        grid-column: 2/ span 2;; 
+        grid-column: 2/ span 2;
+        ;
     }
-    .valor-4{
+    .valor-4 {
         grid-row: 3;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    .valor-5{
+    .valor-5 {
         grid-row: 4;
-        grid-column: 2/span 2; 
+        grid-column: 2/span 2;
     }
-    .valor-6{
+    .valor-6 {
         grid-row: 4;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    #acesso{
+    #acesso {
         grid-row: 5;
         grid-column: 2/6;
         color: #1F1F24;
     }
-    #descricao{
+    #descricao {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 8% 1fr 1fr 1fr 1fr;
     }
-    .descricao-texto{
+    .descricao-texto {
         grid-column: 1/4;
     }
-    .card-seguranca{
+    .card-seguranca {
         grid-column: 2;
         grid-row: 2;
     }
-    .card-velocidade{
+    .card-velocidade {
         grid-column: 2;
         grid-row: 3;
     }
-    .card-flexbilidade{
+    .card-flexbilidade {
         grid-column: 2;
         grid-row: 4;
     }
-    .card-sonho{
+    .card-sonho {
         grid-column: 2;
         grid-row: 5;
     }
@@ -329,8 +371,8 @@ footer{
 header {
     background-color: #1F1F24;
     font-size: 15px;
-
 }
+
 nav {
     display: flex;
     box-sizing: border-box;
@@ -363,15 +405,43 @@ nav {
 a:link, a:visited, a:active {
     text-decoration: none;
     color: black;
-  }
-  
-  a:hover {
-      opacity: 75%;
-  }
+}
+
+a:hover {
+    opacity: 75%;
+}
 
 .middle-link:link, .middle-link:visited, .middle-link:active {
     text-decoration: none;
     color: white;
+}
+
+#contato {
+    margin: auto;
+    margin-bottom: 2vh;
+}
+.contato-texto {
+    text-align: center;
+}
+
+.form-contato {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 5fr;
+    row-gap: 1vw;
+    column-gap: 0.5vh;
+}
+
+.form-mensagem {
+    grid-column: 1/3;
+}
+
+.contato-button {
+    border: 1px solid #e7e7e7;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -384,40 +454,28 @@ a:link, a:visited, a:active {
     #nav-middle-container :nth-child(2) {
         display: none;
     }
+    #contato {
+        margin: 0.5% 0.5%;
+        margin-bottom: 2vh;
+    }
 }
 
 @media screen and (max-device-width: 400px) {
     #nav-middle-container {
         display: none;
     }
-
     nav {
         justify-content: center;
         align-items: center;
     }
-
-    #upFour-logo {   
+    #upFour-logo {
         margin-right: 2em;
     }
-    
+    .footer-button {
+        margin: auto;
+    }
+    #contato {
+        margin: 0.5% 0.5%;
+        margin-bottom: 2vh;
+    }
 }
-
-.contato-texto {
-    text-align: center;
-}
-
-.form-contato {
-    /* text-align: center; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 5fr;
-    row-gap: 1em;
-    column-gap: 0.5em;
-    /* margin: 1em 5em; */
-    /* justify-items: center; */
-}
-
-.form-mensagem {
-    grid-column: 1/3;
-}
-
