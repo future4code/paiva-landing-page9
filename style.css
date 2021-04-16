@@ -3,18 +3,14 @@ body{
     margin: 0px;
     font-family: ubuntu;
 }
-
 img{
     width: 100px;
     height: 100px;
 }
-
-
 #main-container{
     display: flex;
     flex-direction: column;
 }
-
 #emprestimo{
     height: 100%;
     background-color: #D2C2B0;
@@ -61,11 +57,11 @@ img{
     text-transform: uppercase;
     grid-row: 3;
     grid-column: 4; 
+    text-align: center;
 }
 div[class^="valor"]:hover{
     background-color: #33333a;
 }
-
 div[class^="valor"] {
     font-family: sans-serif;
     align-items: center;
@@ -78,7 +74,12 @@ div[class^="valor"] {
     color: #1F1F24;
 }
 .login{
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    text-transform: uppercase;
+}
+.login:hover{
+    opacity: 20%;
 }
 #modelo{
     grid-row: 1/ span 4;
@@ -94,7 +95,7 @@ div[class^="valor"] {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 30% 1fr;
-    column-gap: 1%;
+    column-gap: 3%;
 }
 .descricao-texto{
     grid-column: 1/-1;
@@ -129,6 +130,12 @@ div[class^="card"]{
     display: flex;
     flex-direction: column;
     text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .duvidas-texto{
     background-color: #1F1F24;
@@ -146,6 +153,7 @@ div[class^="card"]{
 }
 .pergunta label {
     display: inline-block;
+    width: 100%;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -153,20 +161,14 @@ div[class^="card"]{
     display: block
 }
 footer{
-  
     color: #1F1F24;
     background-color: #D2C2B0;
     bottom: 0;
-
-
 }
-
 .footer-content{
     display: flex;
     justify-content: center;
     text-align: center;
-    
-    
 }
 .made-by{
     display: flex;
@@ -174,11 +176,8 @@ footer{
     justify-content: space-around;
     padding-bottom: 1vh;
 }
-
 .textfooter{
     text-align: center;
-    size: 6rem;
-
 }
 #logofooter{
     padding: 3px;
@@ -187,26 +186,22 @@ footer{
 }
 .socialdiv{
     text-align: center;
-    
-        
 }
 .social1{
     display: inline-block;
     height: 50px;
     width: 50px;
 }
-
 .footer-button {
-     
+    text-align: center;
+}
+.footer-button {    
     border: 1px solid #e7e7e7;
     background-color: white;    
     border-radius: 12px;
     box-shadow: 2px 2px 5px;
     cursor: pointer;
-    
 }
-
-
 @media screen and (max-device-width: 1197px){
     #modelo{
         grid-row: 1/ span 4;
@@ -216,8 +211,7 @@ footer{
         width: 100%;
         height: 100%;
         max-height: 383.25px;
-    }
-    
+    } 
 }
 @media screen and (max-device-width: 1000px){
     #emprestimo{
@@ -261,7 +255,6 @@ footer{
     #perguntas{
         margin-top: 6%;
     }
-   
 }
 @media screen and (max-device-width: 688px){
     #emprestimo{
@@ -328,11 +321,9 @@ footer{
         grid-row: 5;
     }
 }
-
 header {
     background-color: #1F1F24;
     font-size: 15px;
-
 }
 nav {
     display: flex;
@@ -343,17 +334,14 @@ nav {
     color: white;
     margin: 0 1em;
 }
-
 #nav-middle-container {
     display: flex;
     align-items: center;
     column-gap: 1.5em;
 }
-
 #upFour-logo {
     height: 88%;
 }
-
 .header-button {
     border: 1px solid #e7e7e7;
     background-color: white;
@@ -362,26 +350,29 @@ nav {
     box-shadow: 2px 2px 5px;
     cursor: pointer;
 }
-
 a:link, a:visited, a:active {
     text-decoration: none;
     color: black;
   }
-  
   a:hover {
       opacity: 75%;
   }
-
 .middle-link:link, .middle-link:visited, .middle-link:active {
     text-decoration: none;
     color: white;
 }
 
-    
+@media screen and (max-width: 600px) {
+    #nav-middle-container :nth-child(3) {
+        display: none;
+    }
 }
-
-
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 539px) {
+    #nav-middle-container :nth-child(2) {
+        display: none;
+    }
+}
+@media screen and (max-device-width: 400px) {
     #nav-middle-container {
         display: none;
     }
@@ -389,16 +380,10 @@ a:link, a:visited, a:active {
         justify-content: center;
         align-items: center;
     }
-
-    #upFour-logo {
+    #upFour-logo {   
         margin-right: 2em;
     }
     .footer-button{
         margin: auto;
-        
     }
-    
 }
-
-
-
