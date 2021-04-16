@@ -402,5 +402,22 @@ a:link, a:visited, a:active {
     
 }
 
+.contato-texto {
+    text-align: center;
+}
 
+.form-contato {
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 5fr;
+    row-gap: 1em;
+    column-gap: 0.5em;
+    /* margin: 1em 5em; */
+    /* justify-items: center; */
+}
+
+.form-mensagem {
+    grid-column: 1/3;
+}
 
