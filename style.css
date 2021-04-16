@@ -152,6 +152,60 @@ div[class^="card"]{
   .pergunta input:checked ~ .resposta {
     display: block
 }
+footer{
+  
+    color: #1F1F24;
+    background-color: #D2C2B0;
+    bottom: 0;
+    padding: 2vh;
+    width: 100%; 
+ 
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.made-by{
+    text-align: center;
+    padding-top:1vh;
+}
+
+.textfooter{
+    text-align: center;
+    size: 6rem;
+
+}
+#logofooter{
+    height: 5em;
+    width: 5em;
+}
+.socialdiv{
+    text-align: center;
+        
+}
+.social{
+    padding: 1vw;
+    display: inline-block;
+    text-align: center;
+    
+}
+.footer-button {    
+    display: flex;
+    border: 1px solid #e7e7e7;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px;
+    cursor: pointer;
+    margin-left: 92%;
+}
+    
+
+
 @media screen and (max-device-width: 1197px){
     #modelo{
         grid-row: 1/ span 4;
@@ -347,4 +401,6 @@ a:link, a:visited, a:active {
     }
     
 }
+
+
 
