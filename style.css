@@ -1,17 +1,25 @@
-body{
+body {
     height: 100vh;
     margin: 0px;
     font-family: ubuntu;
 }
+
+/* <<<<<<<imagens do header e cards */
 img{
     width: 100px;
     height: 100px;
 }
+/* <<<<<<<<<<<<<<< */
+
+/* <<<<<<<corpo do site */
 #main-container{
     display: flex;
     flex-direction: column;
 }
-#emprestimo{
+/* <<<<<<<<<<<<<<< */
+
+/* <<<<<<< primeira seção do main-container */
+#emprestimo {
     height: 100%;
     background-color: #D2C2B0;
     color: #D2C2B0;
@@ -21,45 +29,45 @@ img{
     column-gap: 1%;
     row-gap: 1%;
 }
-.texto-emprestimo{
+.texto-emprestimo {
     color: #1F1F24;
     grid-column: 2/5;
     text-align: center;
 }
-.valor-1{
+.valor-1 {
     background-color: #1F1F24;
     align-items: center;
     grid-row: 2;
-    grid-column: 2;  
+    grid-column: 2;
 }
-.valor-2{
+.valor-2 {
     background-color: #1F1F24;
     grid-row: 2;
-    grid-column: 3; 
+    grid-column: 3;
 }
-.valor-3{
+.valor-3 {
     background-color: #1F1F24;
     grid-row: 3;
-    grid-column: 2; 
+    grid-column: 2;
 }
-.valor-4{
+.valor-4 {
     background-color: #1F1F24;
     grid-row: 3;
-    grid-column: 3; 
+    grid-column: 3;
 }
-.valor-5{
+.valor-5 {
     background-color: #1F1F24;
     grid-row: 2;
-    grid-column: 4; 
+    grid-column: 4;
 }
-.valor-6{
+.valor-6 {
     background-color: #1F1F24;
     text-transform: uppercase;
     grid-row: 3;
-    grid-column: 4; 
+    grid-column: 4;
     text-align: center;
 }
-div[class^="valor"]:hover{
+div[class^="valor"]:hover {
     background-color: #33333a;
 }
 div[class^="valor"] {
@@ -68,62 +76,68 @@ div[class^="valor"] {
     justify-content: center;
     display: flex;
 }
-#acesso{
+#acesso {
     grid-row: 4;
     grid-column: 2/5;
     color: #1F1F24;
 }
-.login{
+.login {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
 }
-.login:hover{
+.login:hover {
     opacity: 20%;
 }
-#modelo{
+#modelo {
     grid-row: 1/ span 4;
     grid-column: 6/ span 2;
 }
-.modelo{
+.modelo {
     width: 100%;
     height: 100%;
     max-height: 271.25px;
     max-width: 420px;
 }
-#descricao{
+/* <<<<<<<<<<<<<<< */
+
+/* <<<<<<< segunda seção do main-container */
+#descricao {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 30% 1fr;
     column-gap: 3%;
 }
-.descricao-texto{
+.descricao-texto {
     grid-column: 1/-1;
     text-align: center;
 }
-.card-seguranca{
+.card-seguranca {
     grid-column: 2;
     grid-row: 2;
 }
-.card-velocidade{
+.card-velocidade {
     grid-column: 3;
     grid-row: 2;
 }
-.card-flexbilidade{
+.card-flexbilidade {
     grid-column: 4;
     grid-row: 2;
 }
-.card-sonho{
+.card-sonho {
     grid-column: 5;
     grid-row: 2;
 }
-h4{
+h4 {
     text-align: center;
 }
-div[class^="card"]{
+div[class^="card"] {
     text-align: center;
 }
-#perguntas{
+/* <<<<<<<<<<<<<<< */
+
+/* <<<<<<< terceira seção do main-container */
+#perguntas {
     margin-top: 3%;
     background-color: #1F1F24;
     color: #D2C2B0;
@@ -137,19 +151,19 @@ div[class^="card"]{
     -ms-user-select: none;
     user-select: none;
 }
-.duvidas-texto{
+.duvidas-texto {
     background-color: #1F1F24;
     text-align: center;
 }
-.pergunta:hover{
+.pergunta:hover {
     background-color: #33333a;
 }
 .pergunta {
     border-bottom: 1px solid #1F1F24;
     padding: 10px 0
 }
-.pergunta input,.pergunta .resposta {
-    display: none 
+.pergunta input, .pergunta .resposta {
+    display: none
 }
 .pergunta label {
     display: inline-block;
@@ -157,174 +171,203 @@ div[class^="card"]{
     font-weight: bold;
     margin-bottom: 5px;
 }
-  .pergunta input:checked ~ .resposta {
+.pergunta input:checked~.resposta {
     display: block
 }
-footer{
+/* <<<<<<<<<<<<<<< */
+/* <<<<<<< rodape design geral */
+footer {
     color: #1F1F24;
     background-color: #D2C2B0;
     bottom: 0;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     justify-content: center;
     text-align: center;
 }
-.made-by{
+/* <<<<<<< texto e formatação copyright e botao inicio */
+.made-by {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     padding-bottom: 1vh;
 }
-.textfooter{
+/* <<<<<<< texto abaixo da logo*/
+.textfooter {
     text-align: center;
 }
-#logofooter{
+/* <<<<<<< logo do rodape*/
+#logofooter {
     padding: 3px;
     height: 4em;
     width: 4em;
 }
-.socialdiv{
+/* <<<<<<< icones das redes sociais*/
+.socialdiv {
     text-align: center;
 }
-.social1{
+
+.social1 {
     display: inline-block;
     height: 50px;
     width: 50px;
 }
+/* <<<<<<< botao de inicio*/
 .footer-button {
     text-align: center;
 }
-.footer-button {    
+
+.footer-button {
     border: 1px solid #e7e7e7;
-    background-color: white;    
+    background-color: white;
     border-radius: 12px;
     box-shadow: 2px 2px 5px;
     cursor: pointer;
 }
-@media screen and (max-device-width: 1197px){
-    #modelo{
+
+/* <<<<<<< primeira seção do main-container */
+@media screen and (max-device-width: 1197px) {
+    #modelo {
         grid-row: 1/ span 4;
         grid-column: 5/ span 3;
     }
-    .modelo{
+    .modelo {
         width: 100%;
         height: 100%;
         max-height: 383.25px;
-    } 
+    }
 }
-@media screen and (max-device-width: 1000px){
-    #emprestimo{
+/* <<<<<<<<<<<<<<< */
+
+/* <<<<<<< primeira seção do main-container */
+@media screen and (max-device-width: 1000px) {
+    #emprestimo {
         grid-template-columns: repeat(8, 1fr);
     }
-    #modelo{
+    #modelo {
         display: none;
     }
-    .texto-emprestimo{
+    .texto-emprestimo {
         grid-column: 2/8;
         text-align: center;
     }
-    .valor-1{
+    .valor-1 {
         grid-row: 2;
-        grid-column: 2/ span 2;  
+        grid-column: 2/ span 2;
     }
-    .valor-2{
+    .valor-2 {
         grid-row: 2;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    .valor-3{
+    .valor-3 {
         grid-row: 3;
-        grid-column: 2/ span 2;; 
+        grid-column: 2/ span 2;
     }
-    .valor-4{
+    .valor-4 {
         grid-row: 3;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    .valor-5{
+    .valor-5 {
         grid-row: 2;
-        grid-column: 6/span 2; 
+        grid-column: 6/span 2;
     }
-    .valor-6{
+    .valor-6 {
         grid-row: 3;
-        grid-column: 6/span 2; 
+        grid-column: 6/span 2;
     }
-    #acesso{
+    #acesso {
         grid-column: 2/6;
         color: #1F1F24;
     }
-    #perguntas{
+    /* <<<<<<<<<<<<<<< */
+    
+    /* <<<<<<< terçeira seção do main-container */
+    #perguntas {
         margin-top: 6%;
     }
+    /* <<<<<<<<<<<<<<< */
 }
-@media screen and (max-device-width: 688px){
-    #emprestimo{
+
+/* <<<<<<< primeira seção do main-container */
+@media screen and (max-device-width: 688px) {
+    #emprestimo {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
-    #modelo{
+    #modelo {
         display: none;
     }
-    .texto-emprestimo{
+    .texto-emprestimo {
         grid-column: 1/-1;
         text-align: center;
     }
-    .valor-1{
+    .valor-1 {
         grid-row: 2;
-        grid-column: 2/ span 2;  
+        grid-column: 2/ span 2;
     }
-    .valor-2{
+    .valor-2 {
         grid-row: 2;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    .valor-3{
+    .valor-3 {
         grid-row: 3;
-        grid-column: 2/ span 2;; 
+        grid-column: 2/ span 2;
+        ;
     }
-    .valor-4{
+    .valor-4 {
         grid-row: 3;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    .valor-5{
+    .valor-5 {
         grid-row: 4;
-        grid-column: 2/span 2; 
+        grid-column: 2/span 2;
     }
-    .valor-6{
+    .valor-6 {
         grid-row: 4;
-        grid-column: 4/span 2; 
+        grid-column: 4/span 2;
     }
-    #acesso{
+    #acesso {
         grid-row: 5;
         grid-column: 2/6;
         color: #1F1F24;
     }
-    #descricao{
+    /* <<<<<<<<<<<<<<< */
+    
+    /* <<<<<<< segunda seção do main-container */
+    #descricao {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 8% 1fr 1fr 1fr 1fr;
     }
-    .descricao-texto{
+    .descricao-texto {
         grid-column: 1/4;
     }
-    .card-seguranca{
+    .card-seguranca {
         grid-column: 2;
         grid-row: 2;
     }
-    .card-velocidade{
+    .card-velocidade {
         grid-column: 2;
         grid-row: 3;
     }
-    .card-flexbilidade{
+    .card-flexbilidade {
         grid-column: 2;
         grid-row: 4;
     }
-    .card-sonho{
+    .card-sonho {
         grid-column: 2;
         grid-row: 5;
     }
+    /* <<<<<<<<<<<<<<< */
 }
+
+/* Estilização da Header e barra de navegação */
 header {
     background-color: #1F1F24;
     font-size: 15px;
 }
+
 nav {
     display: flex;
     box-sizing: border-box;
@@ -334,14 +377,17 @@ nav {
     color: white;
     margin: 0 1em;
 }
+
 #nav-middle-container {
     display: flex;
     align-items: center;
     column-gap: 1.5em;
 }
+
 #upFour-logo {
     height: 88%;
 }
+
 .header-button {
     border: 1px solid #e7e7e7;
     background-color: white;
@@ -350,28 +396,69 @@ nav {
     box-shadow: 2px 2px 5px;
     cursor: pointer;
 }
+
 a:link, a:visited, a:active {
     text-decoration: none;
     color: black;
-  }
-  a:hover {
-      opacity: 75%;
-  }
+}
+
+a:hover {
+    opacity: 75%;
+}
+
 .middle-link:link, .middle-link:visited, .middle-link:active {
     text-decoration: none;
     color: white;
 }
 
+/* Estilização da seção com o formulário para contato */
+#contato {
+    margin: auto;
+    margin-bottom: 2vh;
+}
+.contato-texto {
+    text-align: center;
+}
+
+.form-contato {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 5fr;
+    row-gap: 1vw;
+    column-gap: 0.5vh;
+}
+
+.form-mensagem {
+    grid-column: 1/3;
+}
+
+.contato-button {
+    border: 1px solid #e7e7e7;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Primeiro breakpoint para mudar o Header */
 @media screen and (max-width: 600px) {
     #nav-middle-container :nth-child(3) {
         display: none;
     }
 }
+
+/* Segundo breakpoint para mudar o Header. E primeiro breakpoint para o formulário de contato. */
 @media screen and (max-width: 539px) {
     #nav-middle-container :nth-child(2) {
         display: none;
     }
+    #contato {
+        margin: 0.5% 0.5%;
+        margin-bottom: 2vh;
+    }
 }
+
+/* Terceiro breakpoint para mudar o Header. E segundo breakpoint para o formulário de contato. */
 @media screen and (max-device-width: 400px) {
     #nav-middle-container {
         display: none;
@@ -380,10 +467,14 @@ a:link, a:visited, a:active {
         justify-content: center;
         align-items: center;
     }
-    #upFour-logo {   
+    #upFour-logo {
         margin-right: 2em;
     }
-    .footer-button{
+    .footer-button {
         margin: auto;
+    }
+    #contato {
+        margin: 0.5% 0.5%;
+        margin-bottom: 2vh;
     }
 }
