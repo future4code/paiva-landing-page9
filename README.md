@@ -10,6 +10,7 @@ Alguns prints da página:
 ![landing-page-responsive2](https://user-images.githubusercontent.com/20777850/115064302-26b2de80-9ec3-11eb-83ac-207a117fb0d4.jpg)
 ![landing-page-responsive3](https://user-images.githubusercontent.com/20777850/115064303-274b7500-9ec3-11eb-8a4d-771ae641a4be.jpg)
 ![landing-page-responsive4](https://user-images.githubusercontent.com/20777850/115064304-274b7500-9ec3-11eb-871e-68f55530fe3f.jpg)
-![landing-page1](https://user-images.githubusercontent.com/20777850/115064305-274b7500-9ec3-11eb-8915-8a5336b7d2a5.jpg)
-![landing-page2](https://user-images.githubusercontent.com/20777850/115064307-27e40b80-9ec3-11eb-801e-21f7c4be3663.jpg)
+![landing-page1](https://user-images.githubusercontent.com/20777850/115069945-b0b27580-9eca-11eb-8223-62fd5776d775.jpg)
+![landing-page2](https://user-images.githubusercontent.com/20777850/115069948-b1e3a280-9eca-11eb-93f4-a4d7641cb8d8.jpg)
+
 
