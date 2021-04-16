@@ -4,6 +4,8 @@ A empresa fictícia escolhida pelo grupo foi a UpFour, uma empresa que fornece e
 Link do surge:
 
 Alguns prints da página:
+
+
 ![landing-page-responsive1](https://user-images.githubusercontent.com/20777850/115064296-261a4800-9ec3-11eb-8280-1af98fc609c1.jpg)
 ![landing-page-responsive2](https://user-images.githubusercontent.com/20777850/115064302-26b2de80-9ec3-11eb-83ac-207a117fb0d4.jpg)
 ![landing-page-responsive3](https://user-images.githubusercontent.com/20777850/115064303-274b7500-9ec3-11eb-8a4d-771ae641a4be.jpg)
