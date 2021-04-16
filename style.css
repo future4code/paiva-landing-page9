@@ -320,11 +320,23 @@ a:link, a:visited, a:active {
     color: white;
 }
 
+@media screen and (max-width: 600px) {
+    #nav-middle-container :nth-child(3) {
+        display: none;
+    }
+}
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 539px) {
+    #nav-middle-container :nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-device-width: 400px) {
     #nav-middle-container {
         display: none;
     }
+
     nav {
         justify-content: center;
         align-items: center;
