@@ -367,7 +367,7 @@ footer {
         grid-row: 5;
     }
 }
-
+/* Estilização da Header e barra de navegação */
 header {
     background-color: #1F1F24;
     font-size: 15px;
@@ -416,6 +416,7 @@ a:hover {
     color: white;
 }
 
+/* Estilização da seção com o formulário para contato */
 #contato {
     margin: auto;
     margin-bottom: 2vh;
@@ -444,12 +445,14 @@ a:hover {
     cursor: pointer;
 }
 
+/* Primeiro breakpoint para mudar o Header */
 @media screen and (max-width: 600px) {
     #nav-middle-container :nth-child(3) {
         display: none;
     }
 }
 
+/* Segundo breakpoint para mudar o Header. E primeiro breakpoint para o formulário de contato. */
 @media screen and (max-width: 539px) {
     #nav-middle-container :nth-child(2) {
         display: none;
@@ -460,6 +463,7 @@ a:hover {
     }
 }
 
+/* Terceiro breakpoint para mudar o Header. E segundo breakpoint para o formulário de contato. */
 @media screen and (max-device-width: 400px) {
     #nav-middle-container {
         display: none;
